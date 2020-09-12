@@ -1,20 +1,23 @@
 #include "rgi.h"
+#include <vector>
+#include <algorithm>
 
 // Add needed constants
 
 // Add code for genRndNums
 // Add code for printVec
 
-int 
-main() 
+using namespace std;
+
+int main()
 {
-// Declare vector v
+	int VEC_SIZE = 200;
+	vector<int> v(VEC_SIZE);
+	genRndNums(v);
 
-// Generate random numbers to fill vector v	
-
-// Using STL sort sort v
+	sort(v.begin(),v.end());
 	
-// Print vector of sorted random numbers
+	printVec(v);	
 
     return 1;
 }
