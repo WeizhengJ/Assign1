@@ -2,6 +2,7 @@
 #include <iomanip>
 #include <fstream>
 #include <vector>
+#include <cstdlib>
 
 using namespace std;
 
@@ -16,16 +17,22 @@ using namespace std;
 
 // to open two data files
 void open_files(ifstream&, ifstream&);
+	
 
 // to read contents of two data files
 void read_data(ifstream&, vector <vector <int> >&);
 
+
 // to print contents of all matrices
 void print_data(const vector <vector<int> >&);
+
 
 // to generate a matrix by multiplying two input matrices
 void gen_data(const vector <vector<int> >&,
     			const vector <vector<int> >&,
     			vector <vector<int> >&);
+
+
+
 
 #endif
